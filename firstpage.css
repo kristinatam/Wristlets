@@ -1,0 +1,63 @@
+ul {
+    list-style-type:none; 
+    margin: 0; 
+    padding: 0;
+    width: 200px;
+    }
+li {
+    font-size: 18px;
+    border-style:solid;
+    border-color: #ffff99;
+    background-color:#99ffff;
+    }
+nav {
+    float: left; 
+    margin: 0 1.5%; 
+    width: 14%;
+    padding-top: 1.3em;
+    }
+article { 
+    float: right; 
+    margin: 0 1.5%; 
+    width: 79%;
+    }
+body {
+    font-family: arial, "Times new roman", calibri ;
+    font-size: 14px;
+    background-color: #ffff99;
+    }
+header {
+    text-align: center;
+    font-size:2.5em;
+    font-weight: bold; 
+    color: #2F284A;
+    background-image: url("image/karoliukai.jpeg");
+    padding: 1em;
+    }
+footer {
+    font-style: italic; 
+    font-weight: bold;
+    text-align: center;
+    clear: both; 
+    position: relative; 
+    z-index: 10; 
+    height: 3em; 
+    margin-top: -3em;
+    padding: 2em;
+    }
+div.container {
+    width: 100%;
+    }
+a {
+    color: black;
+    text-decoration: none;
+    }
+address {
+    background: #ffff99 url("image/contact.jpeg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 250px 70px;
+}
+table {
+    text-align: center;
+}
