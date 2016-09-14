@@ -1,0 +1,13 @@
+header {
+    font-weight: bold;
+    padding: 2em;
+}
+input {
+    border-color: #06071E;
+}
+.success {
+    display: none;
+}
+button{
+    background-color: #3E42BC;
+}
