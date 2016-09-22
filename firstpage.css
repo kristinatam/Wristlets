@@ -2,7 +2,7 @@ nav {
     float: left; 
     margin: 0 1.5%; 
     width: 14%;
-    padding-top: 1.3em;
+    padding-top: 4em;
     }
 article { 
     float: left; 
@@ -12,7 +12,8 @@ article {
 body {
     font-family: arial, "Times new roman" ;
     font-size: 14px;
-    background-color: #ffff99;
+    background-color: #B8EE83;
+    text-align: justify;
     }
 header {
     text-align: center;
@@ -33,18 +34,11 @@ footer {
     margin-top: -3em;
     padding: 2em;
     }
-a {
-    color: #060606;
-    text-decoration: none;
-    }
 address {
-    background: #ffff99 url("image/contact.jpeg");
+    background: #B8EE83  url("image/contact.jpeg");
     background-repeat: no-repeat;
     background-position: right;
     background-size: 250px 70px;
-    }
-table {
-    text-align: center;
     }
 button {
     font-size: 16px;
@@ -55,123 +49,79 @@ button {
     width: 80%;
     }
 #rotated {
-transform: rotate(2deg);
+    transform: rotate(2deg);
     } 
+img {
+    padding: 1em;   
+    }
+p {
+    padding: 0 1em;
+    }
+p.wide {
+    max-width: 260px;
+    text-align: justify;
+    }
+div.user {
+    display: block;
+    text-align: right;
+    line-height: 40px;
+    padding: 0 40px;
+    }
+h2 {
+    text-align: left;
+    padding: 0 0.4em;
+    }
 
 @media only screen and (max-width: 319px) {
-img.hidden {
-    display: none;
-    }
 address, header {
     background-image: none;
     }
 header {
     font-size: 1.5em;
     }
-nav {
+nav, article {
     width: 100%;
     }
-article {
-    width: 100%;
+p {
+    font-size: 13px;
     }
 img {
-	max-width: 80px;
-    max-height: 80px;
-	}
-tr, table {
-    display: block;
+    max-width: 100px;
     }
-td.hide {
-    display: none;
-    }
-body, button {
-    font-size: 13px;
+div.user {
+    text-align: left;
+    margin: 0;
+    padding: 0;
     }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
-img.hidden {
-    display: none;
-    }
 address {
     background-image: none;
     }
 header {
     font-size: 1.5em;
     }
-nav {
+nav, article {
     width: 100%;
     }
-article {
-    width: 100%;
-    clear: both;
+p {
+    font-size: 13px;
     }
-img {
-	max-width: 100px;
-    max-height: 100px;
-	}
-tr, table {
-    display: block;
-    }
-td.hide {
-    display: none;
+div.user {
+    text-align: center;
     }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-img.hidden {
-    display: none;
-    }
-address {
-    background-image: none;
-    }
-td.hide {
-    display: none;
-    }
-nav {
-    width: 100%;
-    }
-article { 
-    width: 100%;
-    clear: both;
-    }
-button {
-    font-size: 14px;
-    }
-img {
-	max-width: 150px;
-    max-height: 150px;
-	}
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-img.hidden {
-    display: none;
-    }
 address {
     background-image: none;
     }
 nav {
-    width: 26%;
+    width: 25%;
     }
 article { 
-    width: 67%;
+    width: 68%;
     }
-img {
-	max-width: 170px;
-    max-height: 170px;
-	}
 }
 
-@media only screen  and (min-width: 1024px) {
-nav {
-    width: 22%;
-    }
-article { 
-    width: 71%;
-    }
-img {
-	max-width: 230px;
-    max-height: 200px;
-	}
-}

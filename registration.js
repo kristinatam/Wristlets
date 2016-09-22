@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('button').click (function() {
+    $('#button').click (function() {
 
     var email = $('#email').val();
     var username = $('#username').val();

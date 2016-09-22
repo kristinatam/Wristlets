@@ -1,13 +1,12 @@
-header {
-    font-weight: bold;
-    padding: 2em;
+form {
+    text-align: center;
+    padding-top: 50px;
 }
-input {
-    border-color: #06071E;
-}
-.success {
+div.success {
     display: none;
+    text-align: center;
 }
-button{
-    background-color: #3E42BC;
+#email, #username, #password {
+    width: 250px;
 }
+
