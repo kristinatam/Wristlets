@@ -1,10 +1,15 @@
 $(document).ready(function() {
-   var colors = ["#F7BFBF", "#D1A1F6", "#929BEB", "#49FD5B", "#FCA674"];
- 
-    $('#rotated').click(function() {
-         
-    var randomColor = colors[Math.floor(Math.random() * colors.length)];
-        $('body').css("background-color", randomColor);   
-   
+    var colors = $.getJSON("http://www.colourlovers.com/api/palettes/top?jsonCallback=?",
+    { numResults: 3 }, function() {
+
+        var allColors = colors.responseJSON; 
+        
+        $('#rotated').click(function() {  
+        var randomColor = allColors[Math.floor(Math.random() * allColors.length)];
+            $('body, address').css("background-color","#"+ randomColor.colors[0]);    
+            console.log("Spalva: ", randomColor.colors[0]);
+            console.log("Spalvos: ", allColors);
 });
-        });
+    });
+      
+         });
